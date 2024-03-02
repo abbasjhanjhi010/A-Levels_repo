@@ -1,0 +1,18 @@
+Imports System
+
+Module Program
+    Sub Main(args As String())
+        Dim a As Integer = 100
+        Dim b As Integer = 2000
+
+        If (a = 100) Then
+            Console.WriteLine("value of a is 100")
+            If (b = 200) Then
+                Console.WriteLine("The value of a is 100 and the value of b is 200")
+            End If
+        End If
+        Console.WriteLine("Exact value of a is: {0}", a)
+        Console.WriteLine("Exact value of b is: {0}", b)
+        Console.ReadLine()
+    End Sub
+End Module
