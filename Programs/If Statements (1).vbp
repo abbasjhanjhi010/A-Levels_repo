@@ -1,0 +1,25 @@
+Imports System
+
+Module Program
+    Sub Main(args As String())
+        Dim mark As Integer
+        Dim text As String = "grade is "
+
+        Console.WriteLine("Enter the student mark: ")
+        mark = Console.ReadLine()
+        If (mark > 85) And (mark <= 100) Then
+            Console.WriteLine(text & "A")
+        ElseIf (mark > 75) And (mark <= 85) Then
+            Console.WriteLine(text & "B")
+        ElseIf (mark > 65) And (mark <= 75) Then
+            Console.WriteLine(text & "C")
+        ElseIf (mark > 55) And (mark <= 65) Then
+            Console.WriteLine(text & "D")
+        ElseIf (mark > 0) And (mark <= 55) Then
+            Console.WriteLine(text & "F")
+        Else
+            Console.WriteLine("Invalid mark entered")
+        End If
+        Console.ReadKey()
+    End Sub
+End Module
