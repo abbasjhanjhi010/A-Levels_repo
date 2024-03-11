@@ -1,4 +1,4 @@
-Module Module3
+Module Program
     Sub Main()
         Console.WriteLine("Enter a word:")
         Dim word As String = Console.ReadLine()
