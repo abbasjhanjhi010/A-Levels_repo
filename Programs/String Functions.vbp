@@ -1,0 +1,72 @@
+Module Module1
+
+    Sub Main()
+        Dim student As String
+        student = "Elizabeth"
+
+        Dim student_name As String
+        student_name = "Taylor"
+
+        Dim nom As Integer
+
+        Console.WriteLine(Len(student))
+        Console.WriteLine(Right(student, 4))
+        Console.WriteLine(Left(student, 5))
+        Console.WriteLine(Mid(student, 6, 2))
+        Console.WriteLine(UCase(student))
+
+        student = "ELIZABETH"
+
+        Console.WriteLine(LCase(student))
+        student = "elizaeth"
+        Console.WriteLine(LTrim(student))
+
+        student = "elizabeth"
+        Console.WriteLine(UCase(student))
+
+        student = "ELIZABETH"
+        Console.WriteLine(LCase(student))
+
+        student = " elizabeth"
+        Console.WriteLine(LTrim(student))
+
+        student = "elizabeth "
+        Console.WriteLine(RTrim(student))
+
+        student = " elizabeth"
+        Console.WriteLine(Trim(student))
+
+        student = "elizabeth"
+        Console.WriteLine(InStr(student, "beth"))
+
+        student = "A"
+        Console.WriteLine(Asc(student))
+
+        nom = 65
+        Console.WriteLine(Chr(nom))
+
+        student = "elizabeth"
+        Console.WriteLine(student & " " & student_name)
+
+        Dim String1 As String = "1234"
+        Dim Num1 As Integer = Convert.ToInt32(String1)
+
+        Dim Num2 As Integer = CInt(String1)
+
+        Dim Remainder As Integer
+
+        Remainder = Num1 Mod 100
+        Console.WriteLine(Remainder)
+
+        Dim Total = Num1 + Num2
+        Console.WriteLine(Total)
+
+        Num1 = 1234
+        String1 = Convert.ToString(Num1)
+        Console.WriteLine("The ID is " & String1)
+        Console.ReadLine()
+
+        REM The sign & is called string concationater 
+    End Sub
+
+End Module
