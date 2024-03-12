@@ -1,0 +1,10 @@
+Module 3 
+Module Module3
+    Sub Main()
+        Dim exp1 As Double
+        exp1 = 2 ^ 2
+
+        Console.WriteLine(exp1)
+        Console.ReadLine()
+    End Sub
+End Module
