@@ -1,0 +1,12 @@
+Module 6 
+
+Module Module6
+    Sub Main()
+        Dim MySqr1 As Double
+
+        MySqr1 = Math.Sqrt(4)
+        Console.WriteLine(MySqr1)
+
+        Console.ReadLine()
+    End Sub
+End Module
