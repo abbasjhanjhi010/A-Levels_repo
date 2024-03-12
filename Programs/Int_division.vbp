@@ -1,0 +1,12 @@
+Module 2 
+Module Module2
+    Sub Main()
+        Console.WriteLine(10 Mod 5)
+        Console.WriteLine(10 Mod 3)
+
+        Console.WriteLine(47 \ 9)
+        Console.WriteLine(47 / 9)
+
+        Console.ReadLine()
+    End Sub
+End Module
