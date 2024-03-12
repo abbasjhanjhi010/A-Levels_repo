@@ -1,0 +1,17 @@
+Module 4 
+Module Module4
+    Sub Main()
+        Dim MyNumber1 As Double
+        Dim myNumber2 As Double
+
+        MyNumber1 = Math.Abs(50.3)
+        Console.WriteLine(MyNumber1)
+
+        myNumber2 = Math.Abs(-50.3)
+        Console.WriteLine(myNumber2)
+
+
+        Console.ReadLine()
+
+    End Sub
+End Module
