@@ -1,0 +1,17 @@
+Module Module3
+    Sub Main()
+        REM create an instance of the Random class 
+        Dim rnd As New Random()
+        Dim index As Integer
+
+        REM Get a random number from 10 to 99 (2 digits)
+        Dim randomNumber As Integer
+        For index = 1 To 10
+            randomNumber = rnd.Next(10, 100)
+
+            Console.WriteLine(randomNumber)
+        Next index
+
+        Console.ReadLine()
+    End Sub
+End Module
