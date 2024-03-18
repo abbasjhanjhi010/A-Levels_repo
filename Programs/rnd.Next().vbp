@@ -1,0 +1,17 @@
+Module Module4
+    Sub Main()
+        Dim rnd As New Random()
+        Dim index As Integer
+
+        Dim randomNumber As Integer
+        For index = 1 To 10
+            randomNumber = rnd.Next(1, 7)
+            Console.WriteLine(randomNumber)
+            Dim randomNumber1 = rnd.Next(1, 7)
+            Console.WriteLine(randomNumber1)
+
+        Next index
+
+        Console.ReadLine()
+    End Sub
+End Module
