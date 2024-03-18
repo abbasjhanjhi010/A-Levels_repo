@@ -1,0 +1,18 @@
+Module Module2
+    Sub Main()
+        Dim Dice As Integer
+        Dim index As Integer
+
+        For index = 1 To 10
+            Randomize()
+            Dice = Int(((Rnd() * 6) + 1))
+            Dim Dice2 = Int(((Rnd() * 6) + 1))
+
+            REM alternate method: Dice = Int(Rnd() * 11) + 2)
+
+            Console.WriteLine(Dice)
+        Next
+
+        Console.ReadLine()
+    End Sub
+End Module
