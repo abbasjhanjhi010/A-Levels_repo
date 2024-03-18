@@ -1,0 +1,19 @@
+Module Module1
+
+    Sub Main()
+        Dim number As Single
+        REM or As Single for the normal RND function 
+        Dim index As Integer
+
+        For index = 1 To 10
+            Randomize()
+            REM number = Rnd()                    (For the decimal number generation) 
+            number = Int(Rnd() * 50 + 1)
+            Console.WriteLine(number)
+
+        Next index
+
+        Console.ReadLine()
+    End Sub
+
+End Module
