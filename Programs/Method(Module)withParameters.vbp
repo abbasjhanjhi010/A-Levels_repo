@@ -1,0 +1,12 @@
+Module Module3
+    Sub Main()
+        Call ShowSum(1, 2)
+        Console.WriteLine()
+        Console.ReadKey()
+    End Sub
+
+    Sub ShowSum(ByVal value1 As Integer, ByVal value2 As Integer)
+        Console.WriteLine(value1 + value2)
+    End Sub
+
+End Module
