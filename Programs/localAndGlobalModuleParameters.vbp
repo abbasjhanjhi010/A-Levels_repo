@@ -1,0 +1,36 @@
+Module Module1
+
+    Sub Main()
+        REM modular programming is divided into two main groups: Functions and modules 
+        Dim a As Integer = 4
+        Dim b As Integer = 7
+
+        Console.WriteLine("Initially outsie swap procedure")
+        Console.WriteLine("a is {0}", a)
+        Console.WriteLine("b is {0}", b)
+
+        Call Swap(a, b) REM actual parameter refers to the actual values that are being passed to the method 
+        Console.WriteLine("Back to outside swap procedure")
+        Console.WriteLine("a is {0}", a)
+        Console.WriteLine("b is {0}", b)
+        Console.ReadLine()
+    End Sub
+
+    Sub Swap(ByVal a As Integer, ByVal b As Integer) REM parametersthat are declared at the proceudre header are called formal parameters
+        REM ByVal means just passing a copy o fthe valye to the procedure. Any changes inside the procedure will NOT affect the original vale
+
+        REM ByRef (by reference) means that you pass the original value, meaning any changes made in the procedure will affect the original value. 
+
+        Dim temp As Integer ' this is a local variable so this means that outside of the swab procedure, this variable cannot be accessed, however this also means that you can once again define another 
+
+        ' variable by the same name outside of the local variable. 
+        temp = a
+        a = b
+        b = temp
+        Console.WriteLine("Inside swap procedure")
+        Console.WriteLine("a is {0}", a)
+        Console.WriteLine("b is {0}", b)
+
+
+    End Sub
+End Module
