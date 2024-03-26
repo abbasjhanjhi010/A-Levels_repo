@@ -1,0 +1,29 @@
+Imports System
+
+Module Program
+    Sub Main(args As String())
+
+        Dim List1 As New List(Of Integer)
+        Console.Write("Enter a number: ")
+        List1.Add(Console.ReadLine())
+
+        Console.Write("Enter another number: ")
+        List1.Add(Console.ReadLine())
+
+        Console.Write("Enter another number: ")
+        List1.Add(Console.ReadLine())
+
+        Console.Write("Enter another number: ")
+        List1.Add(Console.ReadLine())
+
+        Console.Write("Enter another number: ")
+        List1.Add(Console.ReadLine())
+
+        List1.Sort()
+        List1.Reverse()
+        For Each listItem In List1
+            Console.WriteLine(listItem)
+        Next
+        Console.ReadLine()
+    End Sub
+End Module
