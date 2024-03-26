@@ -1,0 +1,22 @@
+Module Module2
+
+    Dim Num1 As Integer = 0
+    Dim Num2 As Integer = 0
+    Dim Total As Integer = 0
+
+    Sub Main()
+        Console.WriteLine("Enter the first number: ")
+        Num1 = CInt(Console.ReadLine())
+        Console.WriteLine("Enter the second number: ")
+        Num2 = CInt(Console.ReadLine())
+
+        Call CalcTotal(Num1, Num2, Total)
+        Console.WriteLine("The sum of {0} and {1} is {2}", Num1, Num2, Total)
+
+        Console.ReadLine()
+    End Sub
+
+    Sub CalcTotal(ByVal N1 As Integer, ByVal N2 As Integer, ByRef TotalValue As Integer)
+        TotalValue = N1 + N2
+    End Sub
+End Module
