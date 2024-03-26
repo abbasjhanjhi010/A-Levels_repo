@@ -1,0 +1,19 @@
+Imports System
+Imports System.Diagnostics.Tracing
+Imports System.Reflection
+Imports System.Transactions
+
+Module Program
+    Sub Main(args As String())
+        Dim word As String
+        Dim num As Integer
+        Console.Write("Enter a word (minimum 3 characters): ")
+        word = Console.ReadLine()
+        num = word.Length()
+        Console.WriteLine(Asc(word(num - 3)))
+        Console.WriteLine(Asc(word(num - 2)))
+        Console.WriteLine(Asc(word(num - 1)))
+        Console.ReadLine()
+
+    End Sub
+End Module
