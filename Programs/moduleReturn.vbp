@@ -1,0 +1,31 @@
+Module Module5
+    Sub Main()
+        Dim Marks As Integer
+        Dim answer As Integer
+        Console.Write("Enter student marks, for subject 1: ")
+        Marks = Console.ReadLine()
+        Console.Write("for subject 2: ")
+        Marks = Marks + (Console.ReadLine())
+        Console.Write("for subject 3: ")
+        Marks = Marks + (Console.ReadLine())
+        Console.Write("for subject 4: ")
+        Marks = Marks + (Console.ReadLine())
+        Console.Write("for subject 5: ")
+        Marks = Marks + (Console.ReadLine())
+        Console.Write("for subject 6: ")
+        Marks = Marks + (Console.ReadLine())
+        Console.Write("for subject 7: ")
+        Marks = Marks + (Console.ReadLine())
+        Console.Write("for subject 8: ")
+        Marks = Console.ReadLine()
+
+        Call MEAN(Marks, answer)
+        Console.WriteLine($"The average marks scored by the student across eight subjects is {answer}")
+        Console.ReadLine()
+
+    End Sub
+
+    Sub MEAN(ByVal score As Integer, ByRef ans As Integer)
+        ans = score / 8
+    End Sub
+End Module
