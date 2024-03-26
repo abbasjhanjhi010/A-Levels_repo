@@ -1,0 +1,27 @@
+Imports System
+
+Module Program
+    Sub Main(args As String())
+
+        Dim List1 As New List(Of Integer)
+        Console.Write("Enter a number: ")
+        List1.Add(Console.ReadLine())
+
+        Console.Write("Enter another number: ")
+        List1.Add(Console.ReadLine())
+
+        Console.Write("Enter another number: ")
+        List1.Add(Console.ReadLine())
+
+        Console.Write("Enter another number: ")
+        List1.Add(Console.ReadLine())
+
+        Console.Write("Enter another number: ")
+        List1.Add(Console.ReadLine())
+
+        List1.Sort()
+        Console.WriteLine($"The smallest number from the list of numbers you inputted is {List1(0)}")
+        Console.ReadLine()
+
+    End Sub
+End Module
