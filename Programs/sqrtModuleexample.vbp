@@ -1,0 +1,19 @@
+Module Module3
+    Sub Main()
+        Dim X As Integer = 0
+
+        Console.WriteLine("Enter the value of X: ")
+        X = CInt(Console.ReadLine())
+
+        Call sqrt(X)
+        Console.ReadLine()
+    End Sub
+
+    Sub sqrt(ByVal Number As Integer)
+        If Number > 0 Then
+            Console.WriteLine("the square root of the nbumber {0} is {1}", Number, Math.Sqrt(Number))
+        Else
+            Console.WriteLine("Invalid Number")
+        End If
+    End Sub
+End Module
