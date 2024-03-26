@@ -1,0 +1,16 @@
+Module Module4
+    Sub Main()
+        Dim x As Integer = 4
+        Dim ans As Integer
+        Call output(x, ans)
+        Console.WriteLine(ans)
+
+        Console.ReadLine()
+    End Sub
+
+    Sub output(ByVal x As Integer, ByRef Answer As Integer)
+
+        x = x + 1
+        x = x + 3
+    End Sub
+End Module
