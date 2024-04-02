@@ -1,0 +1,28 @@
+Module Module5
+    ' Past paper question 
+    Dim wd As String
+    Dim c1 As Char
+    Dim c2 As Char
+    Sub Main()
+        Console.WriteLine("Enter your character: ")
+        c1 = Console.ReadLine()
+        Console.WriteLine("Enter your string: ")
+        wd = Console.ReadLine()
+
+        Console.WriteLine(Replaced(wd, c1, c2))
+        Console.ReadLine()
+
+    End Sub
+
+    Function Replaced(ByRef sentence As String, ByRef w1 As Char, ByRef w2 As Char) As String
+        Dim len As Integer
+        Dim sentence1 As String = sentence
+        len = sentence.Length()
+        For num = 0 To len
+            If (sentence(num) = w1) Then
+                sentence1.Replace(w1, w2)
+            End If
+        Next
+        Return sentence1
+    End Function
+End Module
