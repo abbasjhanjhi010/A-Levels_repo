@@ -1,0 +1,22 @@
+Module Module1
+
+    ' Module Programming branched off into Procedures and Functions 
+
+    Dim x As Integer = 55
+    Dim y As Integer = 32
+
+    Dim result As Integer
+
+    Sub Main()
+        result = Addition(x, y)
+        Console.WriteLine(Addition(x, y))
+        Console.WriteLine(result)
+        Console.ReadKey()
+
+    End Sub
+
+    Function Addition(ByVal k As Integer, ByVal I As Integer) As Integer
+        Return k + I
+    End Function
+
+End Module
