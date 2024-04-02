@@ -1,0 +1,23 @@
+Module Module4
+    Sub Main()
+        ' Assignment 
+        Dim num As Integer = 100
+        Dim count As Integer
+
+        For num = 100 To 200
+            count = count + (Counter(num))
+
+        Next
+
+        Console.WriteLine($"The number of times it appeared is {count}")
+        Console.ReadLine()
+    End Sub
+
+    Function Counter(ByRef a As String) As Integer
+        Dim times As Integer = 0
+        If (a(2) = "7") Then
+            times = 1
+        End If
+        Return times
+    End Function
+End Module
