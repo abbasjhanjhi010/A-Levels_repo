@@ -1,0 +1,17 @@
+Module Module1
+
+    Sub Main()
+        '' topic: arrays
+        '' there are three main types of arrays, a 1D (dimensional) array a 2D and a 3D. 
+        Dim marks(4) As Integer
+        Dim Index As Integer
+
+        For Index = 0 To 4
+            marks(Index) = 0
+
+        Next
+
+        Console.ReadLine()
+    End Sub
+
+End Module
