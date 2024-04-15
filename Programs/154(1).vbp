@@ -1,0 +1,12 @@
+Module Module2
+    Sub Main()
+        Dim StudentName(4) As String
+        Dim Index As Integer
+
+        For Index = 0 To 4
+            StudentName(Index) = " "
+        Next
+
+        Console.ReadLine()
+    End Sub
+End Module
