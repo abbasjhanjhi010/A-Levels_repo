@@ -1,0 +1,19 @@
+Module Module2
+    Sub Main()
+        Dim Marks(4) As Integer
+        Dim Row As Integer
+        Dim Total As Integer = 0
+
+        For Row = 0 To 4
+            Console.WriteLine("Enter mark or student {0} term 1", Row + 1)
+            Marks(Row) = CInt(Console.ReadLine())
+            Total += Marks(Row)
+            Console.WriteLine(Marks(Row))
+        Next
+
+        Console.WriteLine(Total)
+        Console.WriteLine(Total / 5)
+        Console.ReadLine()
+
+    End Sub
+End Module
