@@ -1,0 +1,11 @@
+Module Module4
+    Sub Main()
+        Dim myMarks(29) As Integer
+        Dim index As Integer
+        For index = 0 To 29
+            myMarks(index) = -1
+        Next
+
+        Console.ReadLine()
+    End Sub
+End Module
