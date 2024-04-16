@@ -1,0 +1,20 @@
+Module Module1
+
+    Sub Main()
+        Dim StudentName(4) As String
+        Dim Marks(4) As Integer
+        Dim Row As Integer
+        For Row = 0 To 4
+            Console.WriteLine("Enter the name of student {0}", Row + 1)
+            StudentName(Row) = Console.ReadLine()
+            Console.WriteLine("Enter the mark for student {0} term 1", Row + 1)
+            Marks(Row) = CInt(Console.ReadLine())
+            Console.Write(StudentName(Row))
+            Console.Write("      " & Marks(Row))
+            Console.WriteLine()
+        Next
+
+        Console.ReadLine()
+    End Sub
+
+End Module
