@@ -1,0 +1,16 @@
+Module Module1
+
+    Sub Main()
+        Dim MaxIndex As Integer = 1
+        Dim MyList As New List(Of Integer)
+        Dim Temp As Integer
+        For i = 1 To MaxIndex - 1
+            If (MyList(i) > MyList(i + 1)) Then
+                Temp = MyList(i)
+                MyList(i) = MyList(i + 1)
+                MyList(i + 1) = Temp
+            End If
+        Next
+    End Sub
+
+End Module
