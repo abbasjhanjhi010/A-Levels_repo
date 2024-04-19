@@ -1,0 +1,35 @@
+Module Module2
+    Sub main()
+        ' Bubble Sort
+        Dim Values(4) As Integer
+        Dim i As Integer
+        Dim Temp As Integer
+        Dim Flag As Boolean
+
+        Values(0) = 7
+        Values(1) = 5
+        Values(2) = 6
+        Values(3) = 11
+        Values(4) = 4
+        Console.WriteLine("Before Sorting: ")
+        For i = 0 To 4
+            Console.WriteLine(Values(i))
+        Next
+        Do
+            Flag = False
+            For i = 1 To 4
+                If Values(i) < Values(i - 1) Then
+                    Temp = Values(i)
+                    Values(i) = Values(i - 1)
+                    Values(i - 1) = Temp
+                End If
+            Next
+        Loop Until Flag = False
+        Console.WriteLine("After Sorting ")
+            For i = 0 To 4
+            Console.WriteLine(Values(i))
+        Next
+        Console.ReadLine()
+
+    End Sub
+End Module
