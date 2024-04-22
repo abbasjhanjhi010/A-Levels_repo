@@ -1,0 +1,24 @@
+Imports System
+Imports System.Xml.Schema
+
+Module Program
+    Sub Main(args As String())
+        Dim SPrice As Integer = 2
+        Console.Write("Enter the price of popcorn: $")
+        Dim pc As Decimal = Console.ReadLine()
+        Console.Write("Enter the price of butter: $")
+        Dim bt As Decimal = Console.ReadLine()
+        Console.Write("Enter the price of bucket: $")
+        Dim bkt As Decimal = Console.ReadLine()
+
+        Console.WriteLine($"The profit made from the sale is ${profitMade(SPrice, pc, bt, bkt)}")
+
+        Console.ReadLine()
+
+    End Sub
+
+    Function profitMade(SP As Decimal, a As Decimal, b As Decimal, c As Decimal) As Decimal
+        Dim profit As Decimal = SP - (a + b + c)
+        Return profit
+    End Function
+End Module
