@@ -1,0 +1,17 @@
+Imports System
+
+Module Program
+    Sub Main(args As String())
+        Console.Write("Enter your age: ")
+        Dim age As Integer = Console.ReadLine()
+        Console.WriteLine($"As per Plato's suggestion, the best age for your partner is {IdealAge(age)}")
+
+        Console.ReadLine()
+
+    End Sub
+
+    Public Function IdealAge(ByVal age As Integer) As Integer
+        Dim Ideal = (age / 2) + 7
+        Return Ideal
+    End Function
+End Module
