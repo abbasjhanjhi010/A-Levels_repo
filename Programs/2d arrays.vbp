@@ -1,0 +1,54 @@
+Imports System
+
+Module Program
+
+    Sub Main()
+        '' Lowerbound is the shortest value (starting value)
+        '' upperbound is the highest value (ending value) 
+        Dim studentName(4) As String
+        Dim Marks(4, 2) As Integer
+        Dim Total(4) As Integer
+        Dim semeterTotal(2) As Integer
+        Dim Row As Integer
+        Dim Column As Integer
+        Dim CGPA(4) As Integer
+
+        For Row = 0 To 4
+            Console.WriteLine("Enter name of student {0}", Row + 1)
+            studentName(Row) = Console.ReadLine()
+            For Column = 0 To 2
+                Console.WriteLine("Enter mark for student {0} term {1}", Row + 1, Column + 1)
+                Marks(Row, Column) = CInt(Console.ReadLine())
+            Next
+        Next
+
+        For Row = 0 To 4
+            Console.Write(studentName(Row))
+            Total(Row) = 0
+            CGPA(Row) = 0
+            For Column = 0 To 2
+                Total(Row) = Total(Row) + Marks(Row, Column)
+                CGPA(Row) = CGPA(Row) + Marks(Row, Column)
+                Console.Write("      " & Marks(Row, Column))
+                If (Column = 2) Then
+                    Console.Write("   Total: " & Total(Row) & "  CGPA: " & (CGPA(Row) / 3))
+                    Console.WriteLine()
+                End If
+            Next
+
+        Next
+        For Column = 0 To 2
+            semeterTotal(Column) = 0
+            For Row = 0 To 4
+                semeterTotal(Column) = semeterTotal(Column) + Marks(Row, Column)
+                Console.Write("    " & semeterTotal(Row))
+
+            Next
+        Next
+
+        Console.WriteLine()
+
+        Console.ReadLine()
+    End Sub
+
+End Module
