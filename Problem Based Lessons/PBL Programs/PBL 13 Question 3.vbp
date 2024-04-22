@@ -1,0 +1,23 @@
+Imports System
+Imports System.Xml.Schema
+
+Module Program
+    Sub Main(args As String())
+        Console.Write("Enter (in degrees) angle 1: ")
+        Dim a1 As Integer = Console.ReadLine()
+        Console.Write("Enter (in degrees) angle 2: ")
+        Dim a2 As Integer = Console.ReadLine()
+        Console.Write("Enter (in degrees) angle 3: ")
+        Dim a3 As Integer = Console.ReadLine()
+
+        Dim total As Integer = a1 + a2 + a3
+        If (total = 180) Then
+            Console.WriteLine($"Total angle of shape is {total} and equals to 180 and so is a triangle.")
+        Else
+            Console.WriteLine($"Total angle of shape is {total} and doesn't equal to 180 and so isn't a triangle.")
+        End If
+
+        Console.ReadLine()
+
+    End Sub
+End Module
