@@ -1,0 +1,14 @@
+Module Module8
+    Sub Main()
+        Dim hours, minutes, sec As Integer
+        Console.Write("Enter the number of hours: ")
+        hours = Console.ReadLine()
+        Console.Write("Enter the number of minutes: ")
+        minutes = Console.ReadLine()
+        Console.Write("Enter the number of seconds: ")
+        sec = Console.ReadLine()
+        Dim inSec As Integer = (60 * 60 * hours) + (minutes * 60) + (sec)
+        Console.WriteLine($"The race time in seconds is {inSec } seconds.")
+        Console.ReadLine()
+    End Sub
+End Module
