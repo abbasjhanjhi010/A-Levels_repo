@@ -1,0 +1,23 @@
+Module Module1
+
+    Sub Main()
+        Dim Student_Name As String
+        Dim Student_Detail As String
+        Dim Student_Mark As Integer
+
+        FileOpen(1, "c:\[FILENAME]", OpenMode.Output) '' The three different open modes are read write and append. The open mode is a function with sub-functions. 
+
+        For count = 1 To 5
+
+            Console.Write("Enter student name: ")
+            Student_Detail = Console.ReadLine()
+            Console.Write("Enter student mark: ")
+            Student_Mark = Console.ReadLine()
+            Student_Detail = Student_Name & Student_Mark
+
+            PrintLine(1, Student_Detail) ' to remove the paranthesis and add up a space between the data use PrintLIne instead of WriteLine
+        Next
+        FileClose(1)
+    End Sub
+
+End Module
