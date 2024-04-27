@@ -1,0 +1,19 @@
+Module Module2
+    Sub Main()
+        Dim Member As String
+        Dim Index As Integer
+
+        FileOpen(1, "c \ [FILENAME]", OpenMode.Output)
+
+        For x = 1 To 5
+            Console.WriteLine("Enter your name:")
+            Member = Console.ReadLine()
+            Console.WriteLine("Generating the Index number...")
+            Index += 1
+
+            PrintLine(1, Index & Member)
+        Next
+
+        FileClose(1)
+    End Sub
+End Module
