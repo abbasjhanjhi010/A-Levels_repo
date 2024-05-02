@@ -1,0 +1,12 @@
+The program already works due to use of manual method to get two SQL keys, however an SQL DDL and DML method 
+would include the following code to execute it under a new query called Alter_Order_Product
+
+
+/*
+for  Alter_Order_product
+
+ ALTER TABLE Order_Product_Table
+Add PRIMARY KEY (Order_ID);
+ADD CONSTRAINT FK_Customer_ID FOREIGN KEY (Customer_ID) REFERENCES Order_Table (Customer_ID int);
+
+*/
