@@ -19,11 +19,10 @@ Welcome to the Computer Science A Levels repository! This repository contains Vi
 
 > [!TIP]
 > ### General Tips:
-
-- **Contributing Guidelines**:
-  - Please refer to our contributing guidelines before making any contributions.
-- **Issue Tracker**:
-  - Encountered a bug? Have a suggestion? Create an issue in the repository's issue tracker.
+> - **Contributing Guidelines**:
+> - - Please refer to our contributing guidelines before making any contributions.
+>   - - **Issue Tracker**:
+>     - - Encountered a bug? Have a suggestion? Create an issue in the repository's issue tracker.
 
 ### Contact Information:
 
