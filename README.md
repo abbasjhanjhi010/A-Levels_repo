@@ -24,7 +24,7 @@ Welcome to the Computer Science A Levels repository! This repository contains Vi
 >   To contribute please create a fork and then clone the repository. To share, push your changes and submit a pull request. 
 >- **Issue Tracker**:
 >   Encountered a bug? Have a suggestion? Create an issue in the repository's issue tracker.
->  
+
 > [!IMPORTANT]
 > ## How to Use:
 >
