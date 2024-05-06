@@ -1,0 +1,19 @@
+Imports System.IO
+Sub Main()
+        Dim Student_Name As String
+        Dim Student_Detail As String
+        Dim Student_Mark As Integer
+        Dim FileHandle As IO.StreamWriter
+        FileHandle = New IO.StreamWriter(“’C\TFile1.txt")
+
+        For index = 1 To 6
+            Console.WriteLine("Enter student name")
+            Student_Name = Console.ReadLine()
+            Console.WriteLine("Enter student mark")
+            Student_Mark = Console.ReadLine()
+            Student_Detail = Student_Name & Student_Mark
+            FileHandle.WriteLine(Student_Name & " :" & Student_Mark )
+)
+        Next
+        FileHandle.Close()
+    End Sub
