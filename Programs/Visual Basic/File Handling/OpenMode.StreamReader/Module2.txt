@@ -1,0 +1,35 @@
+Imports System.IO
+
+Module Module4
+    Sub Main()
+        Dim Student_Name As String
+        Dim Student_Detail As String
+        Dim Student_Mark As String
+        Dim Name_Length As Integer
+        Dim LCount As Integer
+        Dim LCount1 As Integer
+        Dim FileHandle As IO.StreamReader
+        FileHandle = New IO.StreamReader(“D:\TFile1.txt")
+
+
+        While FileHandle.Peek <> -1
+            Do
+                Student_Detail = FileHandle.ReadLine() 
+                Console.WriteLine(Student_Detail)
+                Name_Length = Len(Student_Detail)
+                LCount = Name_Length - 4
+                LCount1 = Name_Length - 2
+                Student_Name = Mid(Student_Detail, 2, LCount)
+                Student_Mark = Mid(Student_Detail, LCount1, 2)
+
+                Console.WriteLine(Name_Length)
+                Console.WriteLine(Student_Name)
+                Console.WriteLine(Student_Mark)
+            Loop Until FileHandle.EndOfStream()
+        End While
+        Console.ReadKey()
+        FileHandle.Close() 
+    End Sub
+
+
+End Module
