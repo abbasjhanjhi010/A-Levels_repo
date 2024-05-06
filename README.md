@@ -16,7 +16,9 @@ Welcome to the Computer Science A Levels repository! This repository contains Vi
 - **Data Population**:
   - Provide instructions for populating sample data into your Access databases.
 
-### General Tips:
+
+> [TIP]
+> ### General Tips:
 
 - **Contributing Guidelines**:
   - Please refer to our contributing guidelines before making any contributions.
