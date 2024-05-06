@@ -1,5 +1,10 @@
 # Computer Science A Levels Repository
 
+> [!IMPORTANT]
+> ## How to Use:
+>
+> To get started, clone this repository to your local machine and explore the projects and databases available. Feel free to contribute or reach out if you need assistance!
+
 Welcome to the Computer Science A Levels repository! This repository contains Visual Basic.NET and Microsoft Access documents as an archive. 
 
 ## Repository Notes:
@@ -25,7 +30,4 @@ Welcome to the Computer Science A Levels repository! This repository contains Vi
 >- **Issue Tracker**:
 >   Encountered a bug? Have a suggestion? Create an issue in the repository's issue tracker.
 
-> [!IMPORTANT]
-> ## How to Use:
->
-> To get started, clone this repository to your local machine and explore the projects and databases available. Feel free to contribute or reach out if you need assistance!
+
