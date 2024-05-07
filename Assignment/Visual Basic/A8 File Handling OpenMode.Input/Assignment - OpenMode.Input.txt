@@ -1,0 +1,28 @@
+Module Module1
+
+    Sub Main()
+        '' File Handling
+        '' FileOpen Lesson 
+
+        Dim BankCode As Integer
+        Dim DispenserCode As Integer
+        Dim LineString As String
+        FileOpen(1, "C:\Users\0372461\Desktop\DISPENSER.txt", OpenMode.Input)
+
+
+        Do
+
+            Console.WriteLine("Enter your bank code: ")
+            BankCode = Console.ReadLine()
+            Console.WriteLine("Enter your dispenser code: ")
+            DispenserCode = Console.ReadLine()
+
+            LineString = (DispenserCode & "▲" & BankCode)
+            WriteLine(1, LineString)
+
+        Loop Until DispenserCode = "XXXXX"
+
+        FileClose(1)
+    End Sub
+
+End Module
