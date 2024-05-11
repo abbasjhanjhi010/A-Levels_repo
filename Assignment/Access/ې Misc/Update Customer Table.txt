@@ -1,0 +1,6 @@
+(sql)
+
+UPDATE Customer
+
+SET TelNo = "123456789"
+WHERE CustomerID = "065";
