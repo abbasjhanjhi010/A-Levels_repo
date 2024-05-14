@@ -1,0 +1,26 @@
+Imports System
+
+Module Program
+    Sub Main(args As String())
+        Dim total As Integer = 0
+        Dim campus As Integer
+
+        Dim enrollment(,) As Integer = {{5, 15, 22, 21, 12, 25, 16, 11, 17, 23},
+                                {11, 23, 51, 25, 32, 35, 32, 52, 25, 21},
+                                {2, 12, 32, 32, 25, 26, 29, 12, 15, 11}}
+
+
+        For x = 0 To 9
+            For campus = 0 To 2
+                total = total + enrollment(campus, x)
+            Next
+
+            Console.WriteLine($"The total enrollment for course({(x + 1)}) is {total}")
+        Next
+
+        Console.ReadKey()
+
+
+
+    End Sub
+End Module
