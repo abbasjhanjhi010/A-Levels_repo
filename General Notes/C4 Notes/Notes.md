@@ -12,3 +12,41 @@ System of Boost clock speed is the internal clock speed of the computer which he
 Memory data or memory buffer.
 RTN = Register Transfer Notation 
 
+
+Lesson 2
+
+Operations:
+-	Input: IN
+-	Output: Out
+
+Arithmetic:
+-	ADD
+-	SUB
+
+Unconditional and Conditional Instructions
+
+Conditional
+-	JPE 
+-	JPN
+Unconditional
+-	JMP
+CMP is used to compare two numbers (or any other type of data). 
+
+Exercise 1:
+
+DECLARE Bill: Integer 
+Input Bill
+IF Bill >= 100
+	Bill  Bill + 0.80
+
+END IF
+OUTPUT Bill 
+
+Low-level Language
+The .START at the beginning is called a directive, if an instruction has a full stop before it then we know it’s a directive. 
+ 
+Exercise 2:
+i)	LDA
+ii)	ADD
+iii)	JPE
+
