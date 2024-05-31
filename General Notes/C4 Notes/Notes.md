@@ -50,3 +50,26 @@ i)	LDA
 ii)	ADD
 iii)	JPE
 
+
+
+LESSON #
+
+
+
+The stages of the two-pass assembly 
+
+The keyword table contains the reserved words of the (assembly) language.
+
+                                                                                                                  Token
+		
+Symbol	Value	Type
+Start	60	Variable
+1	61	Constant
+Number	62	Variable
+Counter 	63	Variable
+12	64	Constant
+
+
+Offset = 9
+Value = 14
+EndProg = 8
