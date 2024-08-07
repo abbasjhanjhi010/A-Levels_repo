@@ -68,3 +68,63 @@ It uses 16 bits instead of 8 bits for each of its parts, and separates the part 
 
 Sub netting 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Due to their longer distances, WAN usually makes use of a public communication network but they can use dedicated or leased communication lines which can be less expensive and more secure. 
+
+Q) The network set up by the school would be a LAN as it will cover a small geographical area, it would also allow the school computers to share files within themselves as well as enabling them to use the same school internet connection, as well as having a similar IP address scheme thus making it easier to control parental permissions on certain sites. 
+
+
+The types of servers 
+Proxy server
+File server
+Email server
+Print server
+Database server
+Web server 
+
+Q) Describe the key features of a peer-to-peer network 
+There are no admins or servers and each computer acts as an admin and server itself. Each of them can control the data shared in between of them. 
+Q) Describe two drawbacks to Melinda and her friends of using a peer-to-peer network 
+The number of computers that can join the server is very limited and it’s hard to restrict access to the server. 
+There is a lack of security features on the server as it’s just a connection between multiple computers rather than a proper full fledge server. 
+
+
+
+
+
+
+(c) (i) Give two benefits of storing data using cloud computing 
+- There is no need for carrying around large amounts of data 
+- Can sometimes be cheaper
+- Can act as a backup 
+- Can be accessed from anywhere and on any device
+
+(ii) Give two disadvantages for using cloud computing 
+A cut of internet connection would halt all tasks
+Data is prone to be accessed by hackers 
+
+
+Transmission Media
+
+
+
+
+
+
+
+
+
+[some of the notes are missing, the cloud storage chapter and the chapter before it ]
