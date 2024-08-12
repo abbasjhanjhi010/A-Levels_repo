@@ -117,8 +117,28 @@ A cut of internet connection would halt all tasks
 Data is prone to be accessed by hackers 
 
 
-Transmission Media
+Transmission Media   [Incomplete]
 
+Advantages of twisted pair:
+
+- It's inexpensive
+- Flexible and lightweight
+- Relatively easy to install
+
+Disadvantages
+- Attenuation problems (repeaters are needed to ensure the signal doesn't die out) (Repeater range depends on whether its analogue or digital signal)
+- Relatively low bandwidth
+
+
+Question
+Advantages of Copper cable
+- Easy to install and light weight
+- Relatively inexpensive
+
+Of fiber optic cable:
+- Has a higher bandwidth capacity (2 Ghz)
+- Lesser environmental interference
+- No need for attenuation (no repeaters needed) 
 
 
 
