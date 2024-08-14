@@ -141,7 +141,29 @@ Of fiber optic cable:
 - No need for attenuation (no repeaters needed) 
 
 
+Chapter 7
+Ethics, Copyright, AI
 
+Types of software
+- Open source
+- Freeware
+- Shareware
+- Commercial software
+
+Copyleft - Software can be downloaded with the source code for free, but all changes that are made must be published back someway or another (basically acts as contributing code back to the original project, similar to Github)
+
+Question
+- Open source: All of the main code if the program is available to the public to be changed or edited if they wish to do so
+- Shareware: A free progra provided to users for free but on a limited time trial
+
+Question
+- The identification is more accurate and directly connected to the database, it takes lesser time and costs a lot less than employing a person to do it manually
+
+Question: Describe one application of AI 
+- It can be used for customer service chats in order to have faster reply time and save costs from not having employees
+
+Questions: A CCTV system uses AI to identify the prescense of a person in the house and to track their movements.
+- (Unchecked) The infrared sensors track movement in the house constantly until the variables change, if there is change (meaning there is movement detected) then the sensor sends the data to the microprocessor to compare against previously set values, the AI which is trained on previous data is used to judge whether it's actually an intruder or a false positive, if it's a real threat then a signal is sent to the alarms to ring the signal, otherwise it is simply ignored. 
 
 
 
