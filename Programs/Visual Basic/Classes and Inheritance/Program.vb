@@ -1,15 +1,15 @@
 Imports System
 
 Module Program
-    Class Vehicle
-        Public Vehicle As String
+    Class Animal
+        Public Animal As String
     End Class
 
     Sub Main(args As String())
-        Dim v1, v2, v3 As New Vehicle
-        v1.Vehicle = "Lorry"
-        v2.Vehicle = "Sedan"
-        v3.Vehicle = "bus"
+        Dim a1, a2, a3 As New Animal
+        a1.Animal = "Mammal"
+        a2.Animal = "Amphibian"
+        a3.Animal = "Reptilian"
 
         Console.ReadKey()
     End Sub
