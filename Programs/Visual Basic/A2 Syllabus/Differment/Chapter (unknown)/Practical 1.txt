@@ -1,0 +1,78 @@
+Imports System.IO
+
+Module Module1
+
+    Dim PlayerScore(10) As String
+    Dim PlayerName(10) As String
+
+    Dim reader As StreamReader = New StreamReader("C:\Users\0372461\Downloads\HighScore.txt")
+    Dim writer As StreamWriter = New StreamWriter("C:\Users\0372461\Downloads\NewHighScore.txt")
+
+    Sub ReadHighScores()
+        For x = 0 To 9
+            PlayerName(x) = reader.ReadLine()
+            PlayerScore(x) = reader.ReadLine()
+        Next
+        reader.Close()
+    End Sub
+
+    Sub OutputHighScores()
+        Console.WriteLine("Player Name" & "    " & "Player Score")
+        For x = 0 To 9
+            Console.WriteLine(PlayerName(x) & "   " & PlayerScore(x))
+        Next
+    End Sub
+
+    Sub WriteTopTen()
+        For x = 0 To 9
+            writer.WriteLine(PlayerName(x) & "   " & PlayerScore(x))
+        Next
+
+
+        writer.Close()
+    End Sub
+
+    Sub BubbleSort()
+        For sort = 0 To 9 Step 1
+            For x = 10 To x + 1 Step -1
+                If (PlayerScore(x) < PlayerScore(x - 1)) Then
+                    temp = PlayerScore(x)
+                    PlayerScore(x) = PlayerScore(x - 1)
+                    PlayerScore(x - 1) = temp
+                End If
+            Next
+        Next
+    End Sub
+
+    Sub Main()
+        ReadHighScores()
+        BubbleSort()
+        OutputHighScores()
+
+        Console.Write("Input a player name: ")
+        Dim newName = Console.ReadLine()
+        If (newName.Length > 2) Then
+            newName = Microsoft.VisualBasic.Left(newName, 3)
+            newName = UCase(newName)
+        End If
+
+        Console.WriteLine()
+        Console.Write("Input a player score: ")
+        Dim newScore = Console.ReadLine()
+        If (newScore.Length > 6) Then
+            newScore = Microsoft.VisualBasic.Left(newScore, 6)
+        End If
+
+        For x = 0 To 9
+            If (newScore > PlayerScore(x)) Then
+                PlayerScore(x) = newScore
+                PlayerName(x) = newName
+            End If
+        Next
+        BubbleSort()
+        OutputHighScores()
+
+        WriteTopTen()
+        Console.ReadLine()
+    End Sub
+End Module
