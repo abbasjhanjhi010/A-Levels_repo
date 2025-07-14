@@ -1,0 +1,90 @@
+Imports System.IO
+Module Module1
+
+    Dim read As StreamReader = New StreamReader("C:\Users\0372461\Downloads\TreasureChestData.txt")
+    Dim ArrayTreasure(4) As TreasureChest
+
+    Class TreasureChest
+        Dim question As String
+        Dim answer As Integer
+        Dim points As Integer
+
+        Sub New(q As String, a As Integer, pt As Integer)
+            question = q
+            answer = a
+            points = pt
+        End Sub
+
+        Function checkAnswer(User)
+            If User = answer Then
+                Return True
+            Else
+                Return False
+            End If
+        End Function
+
+        Function getQuestion()
+            Return question
+        End Function
+
+
+        Function getPoints(attempts)
+            Select Case attempts
+                Case 1
+                    Return points
+                Case 2
+                    Return (points / 2)
+                Case 3 To 4
+                    Return (points / 4)
+                Case Else
+                    Return 0
+            End Select
+        End Function
+
+    End Class
+
+    Sub readData()
+        If Not My.Computer.FileSystem.FileExists("C:\Users\0372461\Downloads\TreasureChestData.txt") Then
+            Console.WriteLine("The file you are looking for doesn't exist at the location")
+            Console.ReadLine()
+        End If
+
+        Dim q As String
+        Dim a, pt As Integer
+
+        For x = 0 To 4
+            q = read.ReadLine()
+            a = read.ReadLine()
+            pt = read.ReadLine()
+
+            Dim que As New TreasureChest(q, a, pt)
+            ArrayTreasure(x) = que
+        Next
+    End Sub
+
+    Sub Main()
+        readData()
+
+        Dim solved As Boolean = False
+        Dim tries As Integer
+        Console.Write("enter a number between 1 to 5to get a specific question: ")
+        Dim input As Integer = Console.ReadLine()
+        input = input - 1
+
+        While solved = False
+            Console.WriteLine()
+            Console.WriteLine(ArrayTreasure(input).getQuestion())
+            Dim userAns As Integer = Console.ReadLine()
+            If ArrayTreasure(input).checkAnswer(userAns) = True Then
+                solved = True
+            Else
+                tries = tries + 1
+            End If
+        End While
+
+        Console.WriteLine(ArrayTreasure(input).getPoints(tries))
+        Console.ReadLine()
+
+    End Sub
+
+End Module
