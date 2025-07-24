@@ -1,0 +1,110 @@
+Imports System
+Imports System.Reflection.Metadata.Ecma335
+
+Class Manager
+    Inherits Employee
+    Protected Bonus As Double
+
+    Public Sub New(bonus As Double, hourly As Double, empNum As String, job As String)
+        MyBase.New(hourly, empNum, job)
+        bonus = bonus
+    End Sub
+
+    Public Overrides Sub SetPay(weekNumber As Integer, hoursWorked As Double)
+        Dim adjustedHours As Double = hoursWorked + (hoursWorked * Bonus / 100.0)
+        MyBase.SetPay(weekNumber, adjustedHours)
+    End Sub
+End Class
+
+Class Employee
+    Protected employeeNum As String
+    Protected jobTitle As String
+    Protected hourlyPay As Double
+    Protected payYear2022(51) As Double
+
+    Sub New(hPay As Double, empNum As String, jTitle As String)
+        hourlyPay = hPay
+        employeeNum = empNum
+        jobTitle = jTitle
+
+        For x = 0 To 51
+            payYear2022(x) = 0.0
+        Next
+    End Sub
+
+    Function GetEmployeeNumber()
+        Return employeeNum
+    End Function
+
+    Public Overridable Sub SetPay(weekNumber As Integer, hoursworked As Double)
+        payYear2022(weekNumber) = weekNumber * hoursworked
+    End Sub
+
+    Function GetTotalPay()
+        Dim TotalPay, temp As Double
+
+        For w = 0 To 51
+            payYear2022(w) = temp
+            TotalPay += temp
+        Next
+        Return TotalPay
+    End Function
+
+End Class
+
+Module Program
+
+    Dim EmployeeArray(7) As Employee
+    Sub Main(args As String())
+        Dim lines() As String = IO.File.ReadAllLines("Employees.txt")
+        Dim index As Integer = 0
+        Dim i As Integer = 0
+
+        While i < lines.Length AndAlso index < 8
+            Dim hourlyPay As Double = Double.Parse(lines(i))
+            Dim empNum As String = lines(i + 1)
+            Dim nextLine As String = lines(i + 2)
+
+            Dim isManager As Boolean = IsNumeric(nextLine)
+
+            If isManager Then
+                Dim bonus As Double = Double.Parse(nextLine)
+                Dim jobTitle As String = lines(i + 3)
+
+                EmployeeArray(index) = New Manager(bonus, hourlyPay, empNum, jobTitle)
+                i += 4
+            Else
+                Dim jobTitle As String = nextLine
+                EmployeeArray(index) = New Employee(hourlyPay, empNum, jobTitle)
+                i += 3
+            End If
+            index += 1
+        End While
+
+        EnterHours()
+        For Each emp In EmployeeArray
+            Console.WriteLine(emp.GetEmployeeNumber() & " " & emp.GetTotalPay())
+        Next
+
+    End Sub
+
+    Sub EnterHours()
+        Dim lines() As String = IO.File.ReadAllLines("HoursWeek1.txt")
+        Dim i As Integer = 0
+
+        While i < lines.Length
+            Dim empNum As String = lines(i)
+            Dim hoursWorked As Double = Double.Parse(lines(i + 1))
+
+            For Each emp In EmployeeArray
+                If emp.GetEmployeeNumber() = empNum Then
+                    emp.SetPay(0, hoursWorked)
+                    Exit For
+                End If
+            Next
+
+            i += 2
+        End While
+    End Sub
+
+End Module
